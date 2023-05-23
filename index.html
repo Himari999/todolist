@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>todolist</title>
+    <title>買い物リスト</title>
 </head>
 <body>
-    <p>買い物リスト</p>
+    <h2 style="color:green; ">買い物リスト</h2>
+    <!--入力テキストと追加ボタンブロック-->
+    <div>
         <input type="text" id="input">
-        <button id="addTodo">買い物リストに追加</button><br>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" 
+        <button id="addTodo">追加</button><br>
+    </div>
+    <!--追加リストブロック-->
+    <div>
+        <ul id="todoList" style="list-style: none; padding-left:0;"></ul >
+    </div>
+    <!--jquery cdnjs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" 
+            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" 
             crossorigin="anonymous" 
-            referrerpolicy="no-referrer"></script>
+            referrerpolicy="no-referrer">
+    </script>
+    <!--jqueryに遷移-->
     <script src="app.js"></script>
-
-    
 </body>
 </html>
